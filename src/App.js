@@ -26,7 +26,7 @@ class App extends Component {
   };
   render() {
     const { showModal, modalContent } = this.state;
-    console.log(modalContent);
+
     return (
       <div className="App">
         <Searchbar onSubmit={this.handleFormSubmit} />

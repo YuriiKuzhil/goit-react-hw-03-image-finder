@@ -6,6 +6,7 @@ const ImageGalleryItem = ({
   imageTag,
   largeImageURL,
   getItemContent,
+  id,
 }) => {
   return (
     <ListItem>
@@ -14,6 +15,7 @@ const ImageGalleryItem = ({
         alt={imageTag}
         largeImageURL={largeImageURL}
         onClick={() => getItemContent(largeImageURL, imageTag)}
+        id={id}
       />
     </ListItem>
   );
