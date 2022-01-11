@@ -25,14 +25,14 @@ class App extends Component {
     this.setState({ modalContent });
   };
   render() {
-    const { showModal, modalContent } = this.state;
+    const { showModal, modalContent, imageName } = this.state;
 
     return (
       <div className="App">
         <Searchbar onSubmit={this.handleFormSubmit} />
         <ImageGallery
           getModalContent={this.getModalContent}
-          imageName={this.state.imageName}
+          imageName={imageName}
           openModal={this.toggleModal}
         />
         <Toaster position="bottom-right" />
